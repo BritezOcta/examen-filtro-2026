@@ -24,45 +24,36 @@
 
 ### Momento del proceso
 
-```
-<!--
-  Indicá en qué punto del examen usaste este prompt.
-  No es sobre la hora exacta — es sobre el contexto: ¿qué estabas intentando resolver cuando recurriste a la IA?
-  Ej: "Cuando no sabía cómo estructurar el layout con Grid."
-  Ej: "Al terminar el HTML, para verificar si me faltaba algo de accesibilidad."
-  Ej: "Al principio del ejercicio de JS, para entender cómo arrancar."
--->
-```
+<!-- A la hora de empezar a editar los estilos, decidí solicitarle que modificase el archivo styles según los requerimientos solicitados.>
 
 ### Lo que le pedí a la IA
 
 ```
-<!-- Pegá aquí el prompt exacto que escribiste. Debe ser el texto que vos escribiste, no la respuesta. -->
+<!-- Objetivo:
+Crear estilos de CSS moderno y responsivo.
+Requisitos:
+-definir el layout macro con grid-template-areas para header, main y footer.
+-Utilizar display: flex para la barra de navegación y las etiquetas de habilidades (.tags).
+-definir contrastes correctos según ratios WCAG AA (Contraste minimo 4.5:1 para textos.)
+-Corregir errores encontrados comentados dentro del archivo.
+Limites:
+-No modificar valores más alla de los solicitados (ejemplo: se solicita cambiar color de texto, pero no se solicita cambiar tamaños o propiedades)
+-No modificar displays a menos que sea explicito y necesitado
+-No agregar features mas allá de las especificadas en el requerimiento.-->
 ```
 
 ### Análisis del resultado obtenido
 
 ```
 <!--
-  Describí con tus propias palabras qué generó la IA. No copies el código ni la respuesta — analizála.
-  Mínimo 3 oraciones. Respondé:
-  - ¿Qué enfoque tomó la IA para resolver el problema?
-  - ¿El resultado era lo que esperabas? ¿Por qué sí o por qué no?
-  - ¿Qué parte te resultó útil como punto de partida?
+La IA reemplazo correctamente los displays solicitados, definió el layout y cambio valores de colores requeridos. Noté que si bien cambio los valores, los contrastes empeoraron según wcag aa.
 -->
 ```
 
 ### Qué debí corregir manualmente y por qué
 
 ```
-<!--
-  Esta sección es la más importante. Sé específico/a. Mínimo 3 oraciones.
-  Respondé:
-  - ¿Qué error concreto tenía el resultado? (semántico, de accesibilidad, lógico, de estilo, etc.)
-  - ¿Cómo lo detectaste? (al probarlo en el browser, al leer el código, al ver la consola...)
-  - ¿Por qué estaba técnicamente incorrecto o insuficiente?
-  - ¿Qué cambiaste exactamente para que funcionara bien?
-  Si no corregiste nada, explicá por qué el resultado era correcto tal como estaba.
+<!-- Si bien la IA cambio los valores de los colores que necesitaban revisión, a la hora de visualizar la página en un live server noté que los niveles de WCAG AA estaban peores que inicialmente y por ende debí corregirlos manualmente.
 -->
 ```
 
